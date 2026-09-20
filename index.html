@@ -2,72 +2,103 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HARKAM LOGISTICS — Metallic Export House</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<title>HARKAM LOGISTICS — 3D Container Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Syne:wght@800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#08080a;color:#fff;font-family:Inter,sans-serif;overflow-x:hidden}
-.top{background:linear-gradient(90deg,#facc15,#ffe88a,#facc15);color:#000;text-align:center;padding:8px;font:900 11px Inter;letter-spacing:1px;background-size:200% 100%;animation:shine 3s linear infinite}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#060608;color:#fff;font-family:Inter,sans-serif;overflow-x:hidden}
+.top{background:linear-gradient(90deg,#facc15,#fff,#facc15);color:#000;text-align:center;padding:8px;font:900 11px Inter;background-size:200% 100%;animation:shine 2s linear infinite}
 @keyframes shine{0%{background-position:0%}100%{background-position:200%}}
-header{padding:20px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1d;backdrop-filter:blur(20px);position:sticky;top:0;z-index:50;background:rgba(8,8,10,0.7)}
-.logo{font-family:Syne;font-weight:800;letter-spacing:-1px;font-size:18px}
-.logo span{background:linear-gradient(180deg,#fff,#a1a1aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header{padding:18px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1e;position:sticky;top:0;background:rgba(6,6,8,.85);backdrop-filter:blur(20px);z-index:99}
+.magnetic-wrap{display:inline-block;transition:transform.25s cubic-bezier(.23,1,.32,1)}
+.btn{background:linear-gradient(180deg,#facc15,#eab308);color:#000;padding:14px 28px;border-radius:100px;font-weight:900;display:inline-block;transition:.4s;box-shadow:0 10px 30px rgba(250,204,21,.3)}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 20px 40px rgba(250,204,21,.5)}
+.hero{max-width:1200px;margin:0 auto;padding:80px 24px 30px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.hero h1{font-family:Syne;font-size:62px;line-height:.9;letter-spacing:-3px}
+.hero h1 b{background:linear-gradient(180deg,#facc15,#a16207);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.grid{max-width:1200px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:#111113;border:1px solid #222;border-radius:24px;overflow:hidden;transition:.6s}
+.card:hover{transform:translateY(-8px);border-color:#facc15;box-shadow:0 30px 60px rgba(0,0,0,.6)}
+.card img{width:100%;height:260px;object-fit:cover;transition:1s}.card:hover img{transform:scale(1.1)}
 
-/* METALLIC BUTTON */
-.magnetic-wrap{display:inline-block;transition:transform .25s cubic-bezier(.23,1,.32,1)}
-.btn-metal{position:relative;background:linear-gradient(180deg, #facc15 0%, #eab308 50%, #a16207 100%);color:#000;padding:16px 32px;border-radius:100px;font-weight:900;display:inline-block;overflow:hidden;transition:.5s;box-shadow:inset 0 1px 0 rgba(255,255,255,0.6), 0 10px 30px rgba(250,204,21,0.3)}
-.btn-metal::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);transition:.6s}
-.btn-metal:hover::before{left:100%}
-.btn-metal:hover{transform:translateY(-3px) scale(1.03);box-shadow:inset 0 1px 0 rgba(255,255,255,0.8), 0 20px 40px rgba(250,204,21,0.5)}
-
-.btn-glass{border:1px solid rgba(255,255,255,0.1);background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));backdrop-filter:blur(10px);padding:16px 32px;border-radius:100px;color:#fff;transition:.4s}
-.btn-glass:hover{border-color:#facc15;color:#facc15;box-shadow:0 0 30px rgba(250,204,21,0.2);transform:translateY(-3px)}
-
-.hero{max-width:1300px;margin:0 auto;padding:120px 28px 60px;position:relative}
-.hero h1{font-family:Syne;font-size:78px;line-height:.85;letter-spacing:-4px;font-weight:800}
-.metallic-text{background:linear-gradient(180deg, #fff 20%, #71717a 50%, #fff 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 30px rgba(255,255,255,0.2))}
-.hero h1 i{font-style:normal;background:linear-gradient(180deg, #facc15, #a16207);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.grid{max-width:1300px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
-
-/* METALLIC CARDS */
-.card{position:relative;background:linear-gradient(180deg, #151517 0%, #0e0e10 100%);border:1px solid #222225;border-radius:28px;overflow:hidden;transition:.6s}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)}
-.card:hover{transform:translateY(-10px) scale(1.02);border-color:#333;background:linear-gradient(180deg, #1a1a1e 0%, #121214 100%);box-shadow:0 40px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1)}
-.card img{width:100%;height:300px;object-fit:cover;transition:1.2s;filter:grayscale(0.2)}
-.card:hover img{transform:scale(1.1);filter:grayscale(0)}
-.info{padding:24px;position:relative}
-.info::after{content:'';position:absolute;bottom:0;left:24px;right:24px;height:1px;background:linear-gradient(90deg, #facc15, transparent);opacity:0;transition:.4s}
-.card:hover .info::after{opacity:1}
-.tag{display:inline-block;font-size:9px;letter-spacing:1.5px;padding:6px 12px;border-radius:100px;background:linear-gradient(180deg, #27272a, #18181b);border:1px solid #2a2a2e;color:#a1a1aa}
-.price-tag{position:absolute;top:16px;right:16px;background:linear-gradient(180deg, #facc15, #eab308);color:#000;padding:6px 14px;border-radius:100px;font-weight:900;font-size:11px;box-shadow:0 4px 15px rgba(250,204,21,0.4)}
+/* 3D CONTAINER */
+.container-3d-section{max-width:1200px;margin:40px auto;padding:30px 24px;background:radial-gradient(600px circle at 50% 0%, rgba(250,204,21,0.15), transparent), #0c0c0e;border:1px solid #1e1e20;border-radius:28px;overflow:hidden}
+.container-viewport{perspective:1200px;height:340px;display:flex;align-items:center;justify-content:center;cursor:grab}
+.container-3d{width:380px;height:180px;position:relative;transform-style:preserve-3d;transition:transform.1s linear;animation:autorotate 20s linear infinite}
+.container-3d:hover{animation-play-state:paused}
+@keyframes autorotate{from{transform:rotateY(0) rotateX(-12deg)}to{transform:rotateY(360deg) rotateX(-12deg)}}
+.face{position:absolute;background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;font-weight:800;letter-spacing:1px}
+.front{width:380px;height:180px;transform:translateZ(90px);background:linear-gradient(180deg, #1e1e20, #101012);border:1px solid #2a2a2e}
+.back{width:380px;height:180px;transform:rotateY(180deg) translateZ(90px);background:#0a0a0c}
+.right{width:180px;height:180px;transform:rotateY(90deg) translateZ(190px);background:linear-gradient(180deg, #27272a, #18181b)}
+.left{width:180px;height:180px;transform:rotateY(-90deg) translateZ(190px);background:#121214}
+.topf{width:380px;height:180px;transform:rotateX(90deg) translateZ(90px);background:linear-gradient(180deg, #2a2a2e, #1a1a1e)}
+.bottom{width:380px;height:180px;transform:rotateX(-90deg) translateZ(90px);background:#08080a}
+.bags{position:absolute;top:20px;left:20px;right:20px;bottom:20px;display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.bag{background:linear-gradient(180deg,#facc15,#a16207);border-radius:4px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5)}
 </style>
 </head>
 <body>
-<div class="top">✦ METALLIC EXPORT HOUSE • CIN: U46200MH2024PTC420826 • WHATSAPP ONLY: +91 9819955713 ✦</div>
-<header><div class="logo">HARKAM <span>LOGISTICS</span></div><div style="display:flex;align-items:center;gap:16px"><a href="tel:+919819955713" style="color:#fff;font-weight:800">+91 9819955713</a><div class="magnetic-wrap"><a class="btn-metal" href="https://wa.me/919819955713">WhatsApp 9819955713</a></div></div></header>
+<div class="top">✦ 3D CONTAINER VISUALIZER • ONLY: +91 9819955713 • JNPT EXPORT ✦</div>
+<header><div style="font-weight:900;font-family:Syne">HARKAM <span style="color:#facc15">LOGISTICS</span></div><div><a href="tel:+919819955713" style="color:#fff;font-weight:800;margin-right:14px">+91 9819955713</a><div class="magnetic-wrap"><a class="btn" href="https://wa.me/919819955713">WhatsApp 9819955713</a></div></div></header>
 
 <div class="hero">
-<h1><span class="metallic-text">Processing<br>India.</span><br><i>Exporting<br>Worldwide.</i></h1>
-<p style="color:#71717a;margin-top:24px;max-width:500px;line-height:1.7;font-size:15px">Brushed metal finish, chrome reflection, liquid hover. Lab-tested, export-grade, factory-direct from JNPT. <b style="color:#fff">Chat on 9819955713 for metallic FOB price list.</b></p>
-<div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
-<div class="magnetic-wrap"><a class="btn-metal" href="https://wa.me/919819955713?text=Hi%20Harkam%20-%20Send%20metallic%20price%20list">Get Price — 9819955713 →</a></div>
-<div class="magnetic-wrap"><a class="btn-glass" href="products.html">View Products</a></div>
+<div>
+<h1>Processing<br>India.<br><b>Exporting<br>Worldwide.</b></h1>
+<p style="color:#71717a;margin-top:18px;line-height:1.7;max-width:440px">Drag the 3D container below — see how your spices load. Real images, metallic glow, 9819955713 only.</p>
+<div class="magnetic-wrap" style="margin-top:20px"><a class="btn" href="https://wa.me/919819955713?text=Hi%20Harkam%20-%20Container%20price">Get Container Price — 9819955713</a></div>
 </div>
+<div style="background:#111113;border:1px solid #222;border-radius:24px;padding:20px;text-align:center"><p style="font-size:11px;letter-spacing:1px;color:#facc15">● 3D CONTAINER — DRAG TO ROTATE</p><p style="font-size:28px;font-weight:900;margin:10px 0">20FT = 20MT Spices</p><p style="color:#71717a;font-size:12px">24MT Rice • 800 Pooja Boxes<br>WhatsApp 9819955713 for load plan</p></div>
+</div>
+
+<div class="container-3d-section">
+<p style="font-size:12px;letter-spacing:1px;color:#facc15;text-align:center">● 3D CONTAINER LOAD — MOUSE DRAG TO ROTATE 360° — HOVER TO PAUSE</p>
+<div class="container-viewport" id="viewport">
+<div class="container-3d" id="cube">
+<div class="face front"><div class="bags"><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div><div class="bag"></div></div><span style="position:absolute;bottom:8px;font-size:10px;letter-spacing:2px">HARKAM LOGISTICS • 9819955713</span></div>
+<div class="face back">JNPT → WORLD</div>
+<div class="face right">20FT</div>
+<div class="face left">20FT</div>
+<div class="face topf">20MT CAPACITY</div>
+<div class="face bottom"></div>
+</div>
+</div>
+<p style="text-align:center;color:#52525b;font-size:11px;margin-top:10px">Drag left/right to rotate • Scroll to see inside bags • Contact 9819955713 for full load plan PDF</p>
 </div>
 
 <div class="grid">
-<div class="card"><div class="price-tag">FOB: $1150/MT</div><img src="spices.jpg"><div class="info"><div class="tag">BRUSHED METAL • EXPORT GRADE</div><h3 style="margin-top:12px;font-family:Syne">Indian Spices</h3><p style="color:#71717a;font-size:13px;margin-top:8px">Turmeric, Cumin, Coriander — WhatsApp 9819955713</p></div></div>
-<div class="card"><div class="price-tag">FOB: $1050/MT</div><img src="rice.jpg"><div class="info"><div class="tag">CHROME FINISH • AGED 12M</div><h3 style="margin-top:12px;font-family:Syne">1121 Basmati</h3><p style="color:#71717a;font-size:13px;margin-top:8px">Steam / Sella / Golden — WhatsApp 9819955713</p></div></div>
-<div class="card"><div class="price-tag">FOB: $12/BOX</div><img src="pooja.jpg"><div class="info"><div class="tag">MIRROR POLISH • USA READY</div><h3 style="margin-top:12px;font-family:Syne">Pooja Kits</h3><p style="color:#71717a;font-size:13px;margin-top:8px">Complete Samagri — WhatsApp 9819955713</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=400&fit=crop"><div style="padding:18px"><h3>Indian Spices</h3><p style="color:#71717a;font-size:13px;margin-top:6px">20MT per 20FT • WhatsApp 9819955713</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=400&fit=crop"><div style="padding:18px"><h3>1121 Basmati</h3><p style="color:#71717a;font-size:13px;margin-top:6px">24MT per 20FT • WhatsApp 9819955713</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?w=600&h=400&fit=crop"><div style="padding:18px"><h3>Pooja Kits</h3><p style="color:#71717a;font-size:13px;margin-top:6px">800 boxes per 20FT • WhatsApp 9819955713</p></div></div>
 </div>
 
-<footer style="text-align:center;padding:40px;color:#27272a;font-size:11px;letter-spacing:1px">© 2026 HARKAM LOGISTICS INDIA PVT LTD — METALLIC EDITION — ONLY: +91 9819955713</footer>
+<footer style="text-align:center;padding:30px;color:#333;font-size:11px">© HARKAM LOGISTICS • 3D EDITION • +91 9819955713</footer>
 
 <script>
+// magnetic
 document.querySelectorAll('.magnetic-wrap').forEach(w=>{
-  const b=w.querySelector('.btn-metal, .btn-glass');w.addEventListener('mousemove',e=>{
+  const b=w.querySelector('.btn');w.addEventListener('mousemove',e=>{
   const r=w.getBoundingClientRect();const x=e.clientX-r.left-r.width/2;const y=e.clientY-r.top-r.height/2;
-  w.style.transform=`translate(${x*0.3}px,${y*0.5}px)`;if(b){b.style.setProperty('--x',`${e.clientX-r.left}px`);b.style.setProperty('--y',`${e.clientY-r.top}px`)}});
+  w.style.transform=`translate(${x*0.3}px,${y*0.5}px)`;});
   w.addEventListener('mouseleave',()=>w.style.transform='translate(0,0)');
+});
+// 3D drag rotate
+const vp=document.getElementById('viewport'), cube=document.getElementById('cube');
+let isDrag=false, startX=0, rotY=0, rotX=-12;
+vp.addEventListener('mousedown',e=>{isDrag=true;startX=e.clientX;cube.style.animation='none'});
+window.addEventListener('mouseup',()=>isDrag=false);
+window.addEventListener('mousemove',e=>{
+  if(!isDrag) return;
+  const delta=e.clientX-startX;
+  rotY+=delta*0.5;startX=e.clientX;
+  cube.style.transform=`rotateY(${rotY}deg) rotateX(${rotX}deg)`;
+});
+vp.addEventListener('touchstart',e=>{isDrag=true;startX=e.touches[0].clientX;cube.style.animation='none'});
+window.addEventListener('touchend',()=>isDrag=false);
+window.addEventListener('touchmove',e=>{
+  if(!isDrag) return;
+  const delta=e.touches[0].clientX-startX;
+  rotY+=delta*0.5;startX=e.touches[0].clientX;
+  cube.style.transform=`rotateY(${rotY}deg) rotateX(${rotX}deg)`;
 });
 </script>
 </body>
