@@ -3,38 +3,53 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — HARKAM LOGISTICS</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0b;color:#fff;font-family:'Inter',sans-serif}
-header{padding:18px 24px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
-.box{max-width:600px;margin:60px auto;background:#111113;border:1px solid #222;border-radius:20px;padding:32px;transition:.4s}
-.box:hover{border-color:#333;box-shadow:0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px #222, 0 0 30px rgba(250,204,21,0.08)}
-.magnetic-wrap{display:inline-block;transition:transform .2s cubic-bezier(0.23,1,0.32,1);margin-top:16px}
-.btn{background:#facc15;color:#000;padding:16px 28px;border-radius:12px;font-weight:900;display:inline-block;position:relative;overflow:hidden}
-.btn::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.8) 0%, transparent 60%);opacity:0;transition:.4s}
-.btn:hover{box-shadow:0 0 30px rgba(250,204,21,0.4);transform:translateY(-2px) scale(1.02)}
-.btn:hover::before{opacity:1}
-a{color:#facc15;text-decoration:none}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#111;color:#f4f4f0;font-family:Inter,sans-serif}
+header{padding:22px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f4f4f0;position:sticky;top:0;background:#111;z-index:99}
+.logo{font-family:Syne;font-weight:800;font-size:16px;line-height:1;color:#f4f4f0}.logo i{font-family:Instrument Serif;font-style:italic;font-size:12px;display:block;color:#999}
+.nav a{margin-left:24px;font-size:12px;font-weight:600;color:#f4f4f0;text-decoration:none;opacity:.6}.nav a.active{opacity:1;border-bottom:2px solid #facc15}
+.btn-pill{background:#facc15;color:#111;padding:10px 20px;border-radius:100px;font-size:12px;font-weight:800;text-decoration:none}
+.hero{padding:60px 32px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hero h1{font-family:Syne;font-size:7vw;line-height:.9;letter-spacing:-0.05em;text-transform:uppercase}
+.hero h1 b{color:#facc15}
+.form{background:#f4f4f0;color:#111;border-radius:24px;padding:32px}
+.form input,.form textarea,.form select{width:100%;padding:14px;border:1px solid #111;border-radius:12px;background:#fff;margin:8px 0;font-family:Inter;font-size:13px}
+.form button{width:100%;background:#111;color:#f4f4f0;padding:16px;border-radius:100px;border:none;font-weight:700;margin-top:12px;cursor:pointer;transition:.3s}
+.form button:hover{background:#facc15;color:#111;transform:rotate(-1deg)}
+.info-box{border:1px solid #333;border-radius:24px;padding:24px;margin-top:24px}
+.info-box h3{font-family:Syne;font-size:14px;letter-spacing:1px;color:#facc15;margin-bottom:8px}
+.info-box p{font-size:13px;color:#999;line-height:1.6}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div style="font-weight:900">HARKAM <span style="color:#facc15">LOGISTICS</span></div><div><a href="index.html">Home</a> | <a href="tel:+919819955713" style="color:#fff">+91 9819955713</a></div></header>
-<div class="box">
-<h1 style="font-size:28px;letter-spacing:-1px;margin-bottom:20px">HARKAM LOGISTICS INDIA PVT LTD</h1>
-<p style="color:#a1a1aa">CIN: U46200MH2024PTC420826<br>Kharghar, Navi Mumbai — JNPT Nhava Sheva</p>
-<hr style="border:none;border-top:1px solid #222;margin:20px 0">
-<p><b>ONLY NUMBER (Call / WhatsApp):</b><br><a href="tel:+919819955713" style="font-size:28px">+91 9819955713</a></p>
-<p style="margin-top:12px"><b>WhatsApp Direct:</b><br><a href="https://wa.me/919819955713">https://wa.me/919819955713</a></p>
-<div class="magnetic-wrap"><a class="btn" href="https://wa.me/919819955713?text=Hi%20Harkam%20Logistics">Chat Now on 9819955713</a></div>
-<p style="margin-top:20px;color:#71717a;font-size:13px">Email: info@harkamlogistics.com<br>All export inquiries: 9819955713</p>
+<header><div class="logo">HARKAM LOGISTICS<i>CIN: U46200MH2024PTC420826</i></div><div class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html" class="active">Contact</a><a href="https://wa.me/919819955713" class="btn-pill" style="margin-left:20px">WhatsApp 9819955713</a></div></header>
+
+<div class="hero">
+<div>
+<h1>LET'S<br>SHIP<br><b>TOGETHER</b></h1>
+<p style="margin-top:20px;color:#999;max-width:400px;line-height:1.6;font-size:14px">We reply within 2 hours on WhatsApp. No bots, direct owner chat. Operating via JNPT Nhava Sheva.</p>
+
+<div class="info-box"><h3>REGISTERED OFFICE</h3><p>Kharghar, Navi Mumbai, Maharashtra 410210<br>CIN: U46200MH2024PTC420826<br>GSTIN: Available on request</p></div>
+<div class="info-box"><h3>EXPORT DESK</h3><p>Phone / WhatsApp: <span style="color:#f4f4f0;font-weight:700">+91 9819955713</span><br>Email: info@harkamlogistics.com<br>Hours: Mon-Sat 10AM-7PM IST</p></div>
+<div class="info-box"><h3>PORT & DOCS</h3><p>Port: JNPT Nhava Sheva<br>Docs: Invoice, Packing List, Phyto, Fumigation, COO<br>Incoterms: FOB / CIF / CFR</p></div>
 </div>
-<script>
-document.querySelectorAll('.magnetic-wrap').forEach(wrap=>{
-  const btn=wrap.querySelector('.btn');wrap.addEventListener('mousemove',e=>{
-  const r=wrap.getBoundingClientRect();const x=e.clientX-r.left-r.width/2;const y=e.clientY-r.top-r.height/2;
-  wrap.style.transform=`translate(${x*0.25}px,${y*0.4}px)`;btn.style.setProperty('--x',`${e.clientX-r.left}px`);btn.style.setProperty('--y',`${e.clientY-r.top}px`)});
-  wrap.addEventListener('mouseleave',()=>wrap.style.transform='translate(0,0)');
-});
-</script>
+
+<div class="form">
+<h3 style="font-family:Syne;font-size:20px">Request FOB Quote</h3>
+<p style="font-size:12px;color:#666;margin:8px 0 16px">We send FOB JNPT price + packing + lab report.</p>
+<input placeholder="Your Name">
+<input placeholder="Company Name">
+<input placeholder="Country">
+<select><option>Select Product</option><option>Turmeric Finger</option><option>Cumin Seeds</option><option>1121 Basmati</option><option>Pooja Kits</option><option>Millets</option></select>
+<input placeholder="Quantity (e.g. 5MT)">
+<textarea rows="4" placeholder="Message — e.g. Need CIF Dubai price"></textarea>
+<button onclick="window.open('https://wa.me/919819955713?text=Hi%20Harkam%20-%20Quote%20request','_blank')">Send on WhatsApp — 9819955713 →</button>
+<p style="font-size:10px;color:#999;margin-top:12px;text-align:center">Click sends you directly to WhatsApp chat with owner</p>
+</div>
+</div>
+
+<footer style="padding:24px 32px;display:flex;justify-content:space-between;font-size:11px;color:#666;border-top:1px solid #222"><div>© 2026 HARKAM LOGISTICS INDIA PVT LTD</div><div>JNPT • +91 9819955713</div></footer>
 </body>
-</html>
+</html>v
