@@ -1,12 +1,40 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact - HARKAM</title><style>body{background:#08080a;color:#fff;font-family:Inter,sans-serif;max-width:600px;margin:60px auto;padding:24px}.card{background:#121214;border:1px solid #1e1e20;border-radius:20px;padding:28px;line-height:2.2}a{color:#facc15;font-weight:700}</style></head><body>
-<h1 style="letter-spacing:-1px">HARKAM LOGISTICS INDIA PVT LTD</h1>
-<div class="card">
-<p>ONLY CONTACT NUMBER (24x7):<br><a href="tel:+919819955713" style="font-size:26px">+91 9819955713</a></p>
-<p>WhatsApp Direct Link:<br><a href="https://wa.me/919819955713">https://wa.me/919819955713</a></p>
-<p>WhatsApp with Message:<br><a href="https://wa.me/919819955713?text=Hi%20Harkam%20Logistics">Click to Chat on 9819955713</a></p>
-<p>CIN: U46200MH2024PTC420826</p>
-<p>Email: info@harkamlogistics.com</p>
-<p>Location: Kharghar, Navi Mumbai - JNPT Port</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — HARKAM LOGISTICS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0b;color:#fff;font-family:'Inter',sans-serif}
+header{padding:18px 24px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
+.box{max-width:600px;margin:60px auto;background:#111113;border:1px solid #222;border-radius:20px;padding:32px;transition:.4s}
+.box:hover{border-color:#333;box-shadow:0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px #222, 0 0 30px rgba(250,204,21,0.08)}
+.magnetic-wrap{display:inline-block;transition:transform .2s cubic-bezier(0.23,1,0.32,1);margin-top:16px}
+.btn{background:#facc15;color:#000;padding:16px 28px;border-radius:12px;font-weight:900;display:inline-block;position:relative;overflow:hidden}
+.btn::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.8) 0%, transparent 60%);opacity:0;transition:.4s}
+.btn:hover{box-shadow:0 0 30px rgba(250,204,21,0.4);transform:translateY(-2px) scale(1.02)}
+.btn:hover::before{opacity:1}
+a{color:#facc15;text-decoration:none}
+</style>
+</head>
+<body>
+<header><div style="font-weight:900">HARKAM <span style="color:#facc15">LOGISTICS</span></div><div><a href="index.html">Home</a> | <a href="tel:+919819955713" style="color:#fff">+91 9819955713</a></div></header>
+<div class="box">
+<h1 style="font-size:28px;letter-spacing:-1px;margin-bottom:20px">HARKAM LOGISTICS INDIA PVT LTD</h1>
+<p style="color:#a1a1aa">CIN: U46200MH2024PTC420826<br>Kharghar, Navi Mumbai — JNPT Nhava Sheva</p>
+<hr style="border:none;border-top:1px solid #222;margin:20px 0">
+<p><b>ONLY NUMBER (Call / WhatsApp):</b><br><a href="tel:+919819955713" style="font-size:28px">+91 9819955713</a></p>
+<p style="margin-top:12px"><b>WhatsApp Direct:</b><br><a href="https://wa.me/919819955713">https://wa.me/919819955713</a></p>
+<div class="magnetic-wrap"><a class="btn" href="https://wa.me/919819955713?text=Hi%20Harkam%20Logistics">Chat Now on 9819955713</a></div>
+<p style="margin-top:20px;color:#71717a;font-size:13px">Email: info@harkamlogistics.com<br>All export inquiries: 9819955713</p>
 </div>
-<p style="text-align:center;margin-top:20px"><a href="index.html" style="color:#71717a">← Back to Home</a></p>
-</body></html>
+<script>
+document.querySelectorAll('.magnetic-wrap').forEach(wrap=>{
+  const btn=wrap.querySelector('.btn');wrap.addEventListener('mousemove',e=>{
+  const r=wrap.getBoundingClientRect();const x=e.clientX-r.left-r.width/2;const y=e.clientY-r.top-r.height/2;
+  wrap.style.transform=`translate(${x*0.25}px,${y*0.4}px)`;btn.style.setProperty('--x',`${e.clientX-r.left}px`);btn.style.setProperty('--y',`${e.clientY-r.top}px`)});
+  wrap.addEventListener('mouseleave',()=>wrap.style.transform='translate(0,0)');
+});
+</script>
+</body>
+</html>
