@@ -5,16 +5,12 @@
 <title>HARKAM LOGISTICS — CRAZY AESTHETIC EXPORT</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#f4f4f0;color:#111;font-family:Inter,sans-serif;overflow-x:hidden}
-::selection{background:#111;color:#f4f4f0}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#f4f4f0;color:#111;font-family:Inter,sans-serif;overflow-x:hidden}
 header{padding:22px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #111;position:sticky;top:0;background:#f4f4f0;z-index:99}
-.logo{font-family:Syne;font-weight:800;font-size:16px;letter-spacing:-0.5px;line-height:1}
-.logo i{font-family:Instrument Serif;font-weight:400;font-style:italic;font-size:12px;display:block;margin-top:2px}
+.logo{font-family:Syne;font-weight:800;font-size:16px;line-height:1}.logo i{font-family:Instrument Serif;font-style:italic;font-size:12px;display:block;margin-top:2px;color:#666}
 .btn-pill{background:#111;color:#f4f4f0;padding:10px 20px;border-radius:100px;font-size:12px;font-weight:600;text-decoration:none;transition:.3s}
 .btn-pill:hover{background:#facc15;color:#111;transform:rotate(-2deg) scale(1.05)}
-.hero{padding:40px 32px 0 32px}
-.hero h1{font-family:Syne;font-size:11vw;line-height:.85;letter-spacing:-0.06em;text-transform:uppercase;font-weight:800}
+.hero{padding:40px 32px 0 32px}.hero h1{font-family:Syne;font-size:11vw;line-height:.85;letter-spacing:-0.06em;text-transform:uppercase;font-weight:800}
 .hero h1 .outline{-webkit-text-stroke:1.5px #111;color:transparent}
 .hero h1 .yellow{background:#facc15;padding:0 12px;display:inline-block;transform:rotate(-1.5deg)}
 .hero-bottom{display:grid;grid-template-columns:300px 1fr 300px;gap:24px;padding:32px;border-top:1px solid #111;border-bottom:1px solid #111;margin-top:32px}
@@ -23,59 +19,46 @@ header{padding:22px 32px;display:flex;justify-content:space-between;align-items:
 .marquee span{font-family:Syne;font-size:14px;margin:0 30px;letter-spacing:1px}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .products{padding:0 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#111;border-top:1px solid #111;border-bottom:1px solid #111}
-.p-card{background:#f4f4f0;padding:0;position:relative;overflow:hidden;transition:.5s}
+.p-card{background:#f4f4f0;position:relative;overflow:hidden;transition:.5s}
 .p-card:hover{background:#fff}
 .p-card img{width:100%;height:420px;object-fit:cover;filter:grayscale(1);transition:.7s}
 .p-card:hover img{filter:grayscale(0);transform:scale(1.05) rotate(1deg)}
 .p-info{padding:20px;display:flex;justify-content:space-between;align-items:flex-end}
 .p-info h3{font-family:Syne;font-size:20px;line-height:1}
 .p-info p{font-size:11px;color:#666;margin-top:6px;max-width:180px}
-.price{font-family:Syne;font-size:32px;font-weight:800}
+.price{font-family:Syne;font-size:28px;font-weight:800}
 .stamp{position:absolute;top:20px;left:20px;background:#facc15;color:#111;padding:6px 12px;border-radius:100px;font-size:10px;font-weight:800;transform:rotate(-8deg);z-index:2}
-.grain{position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}
-.magnetic{transition:transform .2s cubic-bezier(.23,1,.32,1);display:inline-block}
-@media(max-width:900px){.hero-bottom{grid-template-columns:1fr}.products{grid-template-columns:1fr}.hero h1{font-size:16vw}}
+@media(max-width:900px){.hero h1{font-size:16vw}.hero-bottom{grid-template-columns:1fr}.products{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="grain"></div>
 <header>
-<div class="logo">HARKAM LOGISTICS<i>EST 2024 • JNPT • INDIA → WORLD</i></div>
-<div style="display:flex;gap:12px;align-items:center">
-<a href="products.html" style="font-size:12px;color:#111;text-decoration:none;font-weight:600">PRODUCTS</a>
-<a href="contact.html" style="font-size:12px;color:#111;text-decoration:none;font-weight:600">CONTACT</a>
-<a href="https://wa.me/919819955713" class="btn-pill magnetic">GET QUOTE →</a>
+<div class="logo">HARKAM LOGISTICS<i>CIN: U46200MH2024PTC420826 — JNPT</i></div>
+<div style="display:flex;align-items:center;gap:20px">
+<a href="index.html" style="font-size:12px;font-weight:700;color:#111;text-decoration:none;border-bottom:2px solid #111">Home</a>
+<a href="products.html" style="font-size:12px;font-weight:600;color:#666;text-decoration:none">Products</a>
+<a href="contact.html" style="font-size:12px;font-weight:600;color:#666;text-decoration:none">Contact</a>
+<a href="https://wa.me/14379947070" class="btn-pill">WhatsApp +1 437 994 7070</a>
 </div>
 </header>
 
 <div class="hero">
-<h1>PROCESSING <span class="outline">INDIA</span><br><span class="yellow">EXPORTING</span> WORLDWIDE.</h1>
+<h1><span class="outline">Processing</span><br>India.<br><span class="yellow">Exporting</span><br>Worldwide.</h1>
 <div class="hero-bottom">
-<div><p style="font-size:13px;line-height:1.6">We are not traders. We are processors. Direct sourcing, lab-tested, export-grade packing via JNPT. No middlemen. No excuses.</p><p style="margin-top:16px;font-size:11px;color:#999">CIN: U46200MH2024PTC420826<br>Kharghar, Navi Mumbai</p></div>
-<div style="border-left:1px solid #111;border-right:1px solid #111;padding:0 24px"><p style="font-family:Instrument Serif;font-style:italic;font-size:24px;line-height:1.2">"Export is not logistics. Export is trust. And trust is built in the lab, not in the brochure."</p><p style="font-size:11px;margin-top:12px">— HARKAM EXPORT MANIFESTO</p></div>
-<div><div style="font-size:60px;font-family:Syne;font-weight:800;line-height:.8">6+<br><span style="font-size:12px;font-family:Inter;font-weight:400;letter-spacing:1px">COUNTRIES • 50T+ SHIPPED • JNPT PORT • LAB TESTED</span></div><div class="magnetic" style="margin-top:20px"><a href="https://wa.me/919819955713?text=Hi%20Harkam%20-%20Price%20list" class="btn-pill" style="font-size:14px;padding:14px 24px">WHATSAPP — 9819955713</a></div></div>
+<div><b style="font-family:Syne">APEDA / IEC / FSSAI</b><br><span style="font-size:12px;color:#666">Direct factory sourcing, lab-tested, export packing via JNPT Nhava Sheva.</span></div>
+<div><p style="font-family:Instrument Serif;font-style:italic;font-size:22px;line-height:1.3">We are not traders. We are processors. No middlemen, no commission agents — factory to port to your warehouse.</p></div>
+<div style="text-align:right"><a href="https://wa.me/14379947070?text=Hi%20Harkam%20-%20Send%20FOB%20list" class="btn-pill" style="padding:16px 28px;display:inline-block">Get FOB Price →</a><p style="font-size:11px;color:#666;margin-top:10px">Reply in 2 hrs • +1 437 994 7070</p></div>
 </div>
 </div>
 
-<div class="marquee"><div><span>UAE • DUBAI</span><span>USA • NEW YORK</span><span>UK • LONDON</span><span>CANADA • TORONTO</span><span>AUSTRALIA • SYDNEY</span><span>SAUDI • JEDDAH</span><span>UAE • DUBAI</span><span>USA • NEW YORK</span><span>UK • LONDON</span><span>CANADA • TORONTO</span></div></div>
+<div class="marquee"><div><span>🇦🇪 UAE DUBAI — 12MT SHIPPED</span><span>🇺🇸 USA NEW YORK — 8MT</span><span>🇬🇧 UK LONDON — 15MT</span><span>🇨🇦 CANADA TORONTO — 6MT</span><span>🇸🇦 SAUDI JEDDAH — 20MT</span><span>🇦🇪 UAE DUBAI — 12MT SHIPPED</span><span>🇺🇸 USA NEW YORK — 8MT</span><span>🇬🇧 UK LONDON — 15MT</span></div></div>
 
 <div class="products">
-<div class="p-card"><div class="stamp">EXPORT GRADE</div><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&h=600&fit=crop"><div class="p-info"><div><h3>INDIAN<br>SPICES</h3><p>Turmeric Double Polish, Cumin Singapore, Coriander Eagle, Black Pepper</p></div><div class="price">$1150</div></div></div>
-<div class="p-card"><div class="stamp" style="background:#111;color:#f4f4f0">AGED 12M</div><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&h=600&fit=crop"><div class="p-info"><div><h3>1121<br>BASMATI</h3><p>Steam / Sella / Golden. Extra-long, non-sticky, private label</p></div><div class="price">$1050</div></div></div>
-<div class="p-card"><div class="stamp">TEMPLE READY</div><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?w=800&h=600&fit=crop"><div class="p-info"><div><h3>POOJA<br>KITS</h3><p>Complete Samagri for USA UK Canada stores. Retail box packing</p></div><div class="price">$12</div></div></div>
+<div class="p-card"><div class="stamp">EXPORT GRADE</div><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=500&fit=crop"><div class="p-info"><div><h3>Indian Spices</h3><p>Turmeric, Cumin, Coriander — 50KG Jute, Moisture ≤8%</p></div><div class="price">$1150</div></div></div>
+<div class="p-card"><div class="stamp">AGED 12M</div><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=500&fit=crop"><div class="p-info"><div><h3>1121 Basmati</h3><p>Steam / Sella / Golden — 25KG PP, Private Label</p></div><div class="price">$1050</div></div></div>
+<div class="p-card"><div class="stamp">USA UK READY</div><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?w=600&h=500&fit=crop"><div class="p-info"><div><h3>Pooja Kits</h3><p>Complete Samagri — Retail box for temple stores</p></div><div class="price">$12</div></div></div>
 </div>
 
-<footer style="padding:32px;display:flex;justify-content:space-between;font-size:11px;color:#666;border-top:1px solid #111">
-<div>© 2026 HARKAM LOGISTICS INDIA PVT LTD — CRAZY AESTHETIC EDITION<br>We don't do boring.</div>
-<div style="text-align:right">CONTACT: +91 9819955713<br>info@harkamlogistics.com — JNPT NHAVA SHEVA</div>
-</footer>
-
-<script>
-document.querySelectorAll('.magnetic').forEach(el=>{
-  el.addEventListener('mousemove',e=>{
-    const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*0.3}px,${(e.clientY-r.top-r.height/2)*0.5}px)`
-  });el.addEventListener('mouseleave',()=>el.style.transform='translate(0,0)');
-});
-</script>
+<footer style="padding:24px 32px;display:flex;justify-content:space-between;font-size:11px;color:#666;border-top:1px solid #111"><div>© HARKAM LOGISTICS INDIA PVT LTD — CIN: U46200MH2024PTC420826</div><div>Contact: +1 437 994 7070 • info@harkamlogistics.com • JNPT</div></footer>
 </body>
 </html>
