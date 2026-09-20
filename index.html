@@ -1,113 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HARKAM LOGISTICS — Export House with Images</title>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARKAM LOGISTICS INDIA PVT LTD — Processing India. Exporting Worldwide.</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0b;color:#fafafa;font-family:'Geist',sans-serif}
-a{cursor:pointer}
-img{display:block;width:100%;height:100%;object-fit:cover}
-.header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 4%;background:rgba(10,10,11,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08)}
-.hero{display:grid;grid-template-columns:1.1fr 0.9fr;min-height:82vh}
-.hero-left{padding:8% 6% 6% 6%;display:flex;flex-direction:column;justify-content:center}
-.hero-left h1{font-family:'Instrument Serif',serif;font-size:5.2vw;line-height:0.9;font-weight:400}.hero-left h1 em{font-style:italic;color:#a1a1aa}
-.hero-left p{color:#a1a1aa;margin-top:18px;line-height:1.7;font-size:14px;max-width:460px}
-.hero-right{position:relative;overflow:hidden;background:#111}
-.hero-right img{filter:grayscale(10%) contrast(1.1)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.7) 0%, transparent 60%)}
-.hero-badge{position:absolute;bottom:20px;left:20px;right:20px;display:flex;justify-content:space-between;font-family:monospace;font-size:10px;color:#fff;letter-spacing:1px}
-
-.image-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1px;background:rgba(255,255,255,0.08);border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08)}
-.card{background:#0a0a0b;position:relative;overflow:hidden}
-.card:hover img{transform:scale(1.06)}
-.card img{transition:transform 0.8s cubic-bezier(0.16,1,0.3,1)}
-.card .info{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;background:linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)}
-.card .info b{font-size:13px;letter-spacing:1px}.card .info span{font-size:11px;color:#a1a1aa;margin-top:4px;line-height:1.5}
-.lg{grid-column:span 8;min-height:480px}.sm{grid-column:span 4;min-height:480px}.md{grid-column:span 6;min-height:420px}.xs{grid-column:span 3;min-height:360px}
-.label{position:absolute;top:16px;left:16px;background:#facc15;color:#000;font-family:monospace;font-size:10px;font-weight:800;padding:5px 9px;border-radius:100px;letter-spacing:1px;z-index:2}
-
-.gallery-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(255,255,255,0.08)}
-.gallery-strip div{height:160px;overflow:hidden;position:relative}
-.gallery-strip div::after{content:attr(data-text);position:absolute;bottom:8px;left:8px;font-family:monospace;font-size:9px;background:rgba(0,0,0,0.7);color:#fff;padding:3px 6px;border-radius:4px}
-
-.btn{display:inline-flex;margin-top:22px;background:#fff;color:#000;padding:12px 20px;border-radius:100px;font-weight:800;font-size:12px;text-decoration:none;transition:0.2s}.btn:hover{background:#facc15;transform:translateY(-2px)}
-
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-left h1{font-size:11vw}.lg,.sm,.md,.xs{grid-column:span 12;min-height:380px}.gallery-strip{grid-template-columns:1fr 1fr}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0b;color:#fff;font-family:Inter,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+.topbar{background:#facc15;color:#000;text-align:center;padding:8px;font-weight:700;font-size:13px}
+header{padding:18px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;position:sticky;top:0;background:#0a0a0b;z-index:10}
+.logo{font-weight:900;letter-spacing:1px}
+.logo span{color:#facc15}
+.nav a{margin-left:18px;font-size:14px;color:#a1a1aa}
+.nav a:hover{color:#fff}
+.hero{padding:80px 24px;max-width:1100px;margin:0 auto}
+.hero h1{font-size:52px;line-height:1.1;max-width:700px}
+.hero h1 b{color:#facc15}
+.hero p{color:#a1a1aa;margin-top:18px;max-width:560px;line-height:1.6}
+.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:#facc15;color:#000;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-block}
+.btn2{border:1px solid #333;padding:14px 22px;border-radius:10px;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:24px;max-width:1100px;margin:0 auto}
+.card{background:#111113;border:1px solid #222;border-radius:16px;overflow:hidden}
+.card img{width:100%;height:220px;object-fit:cover;background:#18181b}
+.card .info{padding:16px}
+.card h3{font-size:16px}
+.card p{color:#a1a1aa;font-size:13px;margin-top:6px;line-height:1.5}
+.contact{max-width:1100px;margin:40px auto;padding:24px;border:1px solid #222;border-radius:16px;background:#111113}
+.contact h2{font-size:22px;margin-bottom:12px}
+.contact p{color:#a1a1aa;line-height:1.8}
+.contact a{color:#facc15;font-weight:700}
+footer{padding:30px 24px;text-align:center;color:#52525b;font-size:12px;border-top:1px solid #222;margin-top:40px}
 </style>
 </head>
 <body>
+<div class="topbar">MOQ 25KG • FOB / CIF / JNPT • CIN: U46200MH2024PTC420826</div>
+<header>
+<div class="logo">HARKAM <span>LOGISTICS</span></div>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="tel:+919819955713">+91 9819955713</a>
+<a href="https://wa.me/919819955713" style="background:#25D366;color:#000;padding:8px 14px;border-radius:8px;font-weight:800">WhatsApp</a>
+</div>
+</header>
 
-<div class="header">
-<div style="font-weight:900;font-size:13px;line-height:1">HARKAM LOGISTICS<br><span style="font-family:'Instrument Serif';font-weight:400;font-style:italic;color:#a1a1aa">INDIA PVT LTD</span></div>
-<div style="display:flex;gap:8px"><span style="font-family:monospace;font-size:10px;border:1px solid rgba(255,255,255,0.15);padding:6px 10px;border-radius:100px;color:#a1a1aa">CIN: U46200MH2024PTC420826</span><a href="https://wa.me/918652635500" target="_blank" style="font-family:monospace;font-size:10px;background:#fff;color:#000;padding:6px 12px;border-radius:100px;text-decoration:none;font-weight:800">WHATSAPP →</a></div>
+<section class="hero">
+<h1>Processing India.<br><b>Exporting Worldwide.</b></h1>
+<p>Premium Indian Spices, Basmati Rice, Millets, Herbs & Pooja Essentials. Direct from source to 6 countries. Kharghar, Navi Mumbai — Operating via JNPT Port.</p>
+<div class="btns">
+<a class="btn" href="https://wa.me/919819955713?text=Hi%20Harkam%20Logistics,%20I%20want%20price%20list">Get Price on WhatsApp - 9819955713</a>
+<a class="btn2" href="products.html">View Products</a>
+</div>
+</section>
+
+<div class="grid">
+<div class="card"><img src="spices.jpg" alt="Spices"><div class="info"><h3>Indian Spices — Export Grade</h3><p>Turmeric Finger, Cumin, Coriander, Black Pepper. 50KG Bags • Lab Tested • FSSAI Certified</p></div></div>
+<div class="card"><img src="rice.jpg" alt="Basmati"><div class="info"><h3>1121 Basmati Rice</h3><p>Long Grain, Aged, Steam / Sella. 25KG PP Bags • Export to UAE, UK, USA</p></div></div>
+<div class="card"><img src="pooja.jpg" alt="Pooja Kit"><div class="info"><h3>Pooja Kits & Samagri</h3><p>Complete Pooja Sets for Temple Stores in USA, UK, Canada.</p></div></div>
 </div>
 
-<div class="hero">
-<div class="hero-left">
-<span style="font-family:monospace;font-size:10px;letter-spacing:2px;color:#facc15">● GOVT. REGISTERED EXPORT HOUSE • KHARGHAR, NAVI MUMBAI</span>
-<h1>Processing<br>India. <em>Exporting<br>Worldwide.</em></h1>
-<p>We process & export 9 categories — Spices, Oil Seeds, Herbs, Basmati Rice & Millets, Pooja Items, Utensils, Sports & Cosmetics — with direct APMC sourcing, custom packing, lab reports & JNPT shipping. <b style="color:#fff">MOQ 25KG onwards.</b></p>
-<a href="products.html" class="btn">Explore Full Catalogue →</a>
-</div>
-<div class="hero-right">
-<img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1000" alt="Spices India">
-<div class="hero-overlay"></div>
-<div class="hero-badge"><span>SPICES • RICE • HERBS — DIRECT SOURCING</span><span>JNPT PORT • AIR CARGO</span></div>
-</div>
+<div class="contact">
+<h2>Contact — HARKAM LOGISTICS INDIA PVT LTD</h2>
+<p>Phone / WhatsApp: <a href="https://wa.me/919819955713">+91 9819955713</a></p>
+<p>Call: <a href="tel:+919819955713">+91 9819955713</a></p>
+<p>Email: info@harkamlogistics.com</p>
+<p>Address: Kharghar, Navi Mumbai, Maharashtra — Port: JNPT (Nhava Sheva)</p>
+<p>CIN: U46200MH2024PTC420826</p>
 </div>
 
-<div class="image-grid">
-
-<div class="card lg">
-<span class="label">CATEGORY 01 — 8 PRODUCTS</span>
-<img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200" alt="Spices">
-<div class="info"><b>SPICES & OIL SEEDS — SALEM, UNJHA, SANG LI</b><span>Turmeric Finger 2-3% Curcumin (Salem), Cumin Singapore 99% (Unjha), Coriander, Black Pepper, Cardamom, Mustard, Sesame, Flax — with lab report & moisture certificate.</span></div>
-</div>
-
-<div class="card sm">
-<span class="label">CATEGORY 02</span>
-<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800" alt="Basmati Rice">
-<div class="info"><b>1121 BASMATI & MILLETS — PUNJAB</b><span>1121 Sella/Steam Basmati, IR64, Foxtail, Kodo, Little Millets, Toor Dal — custom 25kg PP to 1kg retail pouches.</span></div>
-</div>
-
-<div class="card sm">
-<span class="label">CATEGORY 03</span>
-<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="Herbs">
-<div class="info"><b>HERBS & BOTANICALS — NEEMUCH</b><span>Ashwagandha Root, Moringa Powder, Tulsi, Neem, Brahmi, Hibiscus, Lemongrass — cut & powder form.</span></div>
-</div>
-
-<div class="card lg">
-<span class="label">CATEGORY 04 & 05 — MOST EXPORTED</span>
-<img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=1200" alt="Pooja Items">
-<div class="info"><b>POOJA, FESTIVAL & KITCHENWARE — INDIA</b><span>Dhoop, Agarbatti, Camphor, Kumkum, Brass Diya, Kalash, Cast Iron & Brass Utensils — festival kits for UAE, USA, UK temples & stores.</span></div>
-</div>
-
-<div class="card md">
-<img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?q=80&w=800" alt="Factory">
-<div class="info"><b>QUALITY CHECK & PACKING LAB</b><span>We inspect aroma, oil content, moisture. Private label with your brand, barcode, FSSAI & importer address.</span></div>
-</div>
-
-<div class="card md">
-<img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=800" alt="Shipping">
-<div class="info"><b>JNPT / NHAVA SHEVA PORT + AIR CARGO</b><span>FOB & CIF, Invoice, Packing List, Certificate of Origin, Phytosanitary, Fumigation — all documentation handled.</span></div>
-</div>
-
-</div>
-
-<div class="gallery-strip">
-<div data-text="TURMERIC FINGER"><img src="https://images.unsplash.com/photo-1615484477778-ca3b779589f6?q=80&w=400" alt=""></div>
-<div data-text="CUMIN SEEDS"><img src="https://images.unsplash.com/photo-1506368083636-6defb67639a7?q=80&w=400" alt=""></div>
-<div data-text="BASMATI RICE"><img src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?q=80&w=400" alt=""></div>
-<div data-text="MORINGA POWDER"><img src="https://images.unsplash.com/photo-1563635705-4eab396724a6?q=80&w=400" alt=""></div>
-<div data-text="BRASS DIYA"><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=400" alt=""></div>
-</div>
-
-<div style="padding:30px 4%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;font-family:monospace;font-size:10px;color:#71717a;letter-spacing:1px;border-top:1px solid rgba(255,255,255,0.08)">
-<span>© 2026 HARKAM LOGISTICS INDIA PVT LTD — U46200MH2024PTC420826</span>
-<span>FL 1001, BALAJI AMRUT CHS, PLOT 193, SECTOR-10, KHARGHAR, NAVI MUMBAI - 410210</span>
-<span><a href="https://wa.me/918652635500" style="color:#fff">WHATSAPP: +91 86526 35500</a> — IMAGES ARE PLACEHOLDER, REPLACE WITH YOUR OWN</span>
-</div>
-
+<footer>© 2026 HARKAM LOGISTICS INDIA PVT LTD • All contact: +91 9819955713 • avv1iii.github.io/harkam-logistics</footer>
 </body>
 </html>
